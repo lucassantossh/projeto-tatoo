@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2,
+  h3,
+  p {
+    @apply text-white;
+  }
+}
+@layer components {
+  .whatsapp-button {
+    @apply bg-green-600 text-white border-none rounded-sm px-4 py-2 mt-8;
+  }
+  .section-title {
+    @apply text-3xl font-medium text-red-600 mb-8 capitalize tracking-wide;
+  }
+  .title-base {
+    @apply tracking-wide font-medium uppercase text-lg mb-4;
+  }
+  .paragraph {
+    @apply tracking-wider font-light mb-4;
+  }
+}
+/* classes */
+.fixed-scroll {
+  overflow-y: hidden;
+}
