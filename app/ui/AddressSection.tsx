@@ -3,18 +3,20 @@ import { ImLocation2 } from 'react-icons/im'
 export default function AddressSection() {
   return (
     <section
-      className='container px-4 mx-auto mb-12 lg:min-h-screen flex flex-col justify-between items-center
-    lg:flex-row  lg:px-48'
+      id='address'
+      className='section lg:min-h-screen flex flex-col justify-between items-center bg-contact bg-center bg-cover bg-fixed
+    lg:flex-row'
     >
-      <div className='max-w-sm lg:max-w-lg mb-8'>
+      <div className='max-w-sm lg:max-w-lg mb-8 p-8'>
         <h2 className='section-title text-center'>
           Faça uma visita ao nosso estúdio
         </h2>
-        <p className='paragraph text-center'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-          facere obcaecati soluta, reprehenderit temporibus adipisci?
+        <p className='paragraph'>
+          Estamos localizados em um local acessível e climatizado com um
+          ambiente amigável, propicio para você passar um bom momento enquanto
+          faz sua tatuagem
         </p>
-        <p className='text-red-600 flex items-center gap-4'>
+        <p className='text-[#1BC6B4] flex items-center gap-4'>
           <span className='text-2xl'>
             <ImLocation2 />
           </span>

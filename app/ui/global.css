@@ -6,18 +6,21 @@
   h2,
   h3,
   p {
-    @apply text-white;
+    @apply text-slate-100;
   }
 }
 @layer components {
+  .section {
+    @apply pt-24 pb-8 container mx-auto px-4 lg:px-48;
+  }
   .whatsapp-button {
     @apply bg-green-600 text-white border-none rounded-sm px-4 py-2 mt-8;
   }
   .section-title {
-    @apply text-3xl font-medium text-red-600 mb-8 capitalize tracking-wide;
+    @apply text-3xl font-medium text-[#A1B4C4] mb-8 capitalize tracking-wide;
   }
-  .title-base {
-    @apply tracking-wide font-medium uppercase text-lg mb-4;
+  .heading-two {
+    @apply tracking-wide font-medium uppercase text-2xl mb-4;
   }
   .paragraph {
     @apply tracking-wider font-light mb-4;

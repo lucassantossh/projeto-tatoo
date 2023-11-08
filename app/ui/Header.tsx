@@ -3,6 +3,7 @@ import { useContext, useEffect } from 'react'
 import { GlobalContext } from '@/app/providers/GlobalContext'
 import HeaderNavList from './HeaderNavList'
 import HeaderHamburguerMobileButton from './HeaderHamburguerMobileButton'
+import Link from 'next/link'
 // import ThemeSwitcher from './ThemeSwitcher'
 export default function Header() {
   const { activeMobileMenu, colorHeader, setColorHeader } =
@@ -36,22 +37,21 @@ export default function Header() {
   return (
     <header
       className={`
-      flex justify-between items-center fixed top-0 left-0 w-full p-4
+      flex justify-between items-center fixed top-0 left-0 w-full p-4 z-30
       sm:px-8
       lg:px-32
       xl:px-48
-      ${colorHeader ? 'bg-slate-950' : 'bg-transparent'}
+      ${colorHeader ? 'bg-[#202529]' : 'bg-transparent'}
     `}
     >
-      <h2
-        className={`
-        font-gruppo z-10 uppercase
-      ${colorHeader ? 'text-white' : 'text-red-600'}
-
-      `}
+      <Link
+        href={'/'}
+        className={`z-10 uppercase ${
+          colorHeader ? 'text-white' : 'text-gray-50'
+        }`}
       >
-        tatoo
-      </h2>
+        killer tatoo
+      </Link>
       <HeaderNavList />
       <HeaderHamburguerMobileButton />
     </header>

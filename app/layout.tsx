@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Grenze_Gotisch } from 'next/font/google'
 import './ui/global.css'
 import { GLOBALCONTEXTPROVIDER } from './providers/GlobalContext'
 import Header from './ui/Header'
 import Footer from './ui/Footer'
-
+const grenze = Grenze_Gotisch({
+  weight: ['900'],
+  subsets: ['latin'],
+  variable: '--font-grenze',
+})
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -20,7 +24,9 @@ export default function RootLayout({
   return (
     <GLOBALCONTEXTPROVIDER>
       <html lang='pt-br'>
-        <body className={`${inter.className} bg-slate-900`}>
+        <body
+          className={`${inter.className} ${grenze.variable} bg-[rgba(32,37,41,1)]`}
+        >
           <Header />
           <main>{children}</main>
           <Footer />

@@ -14,17 +14,17 @@ export default function HeaderHamburguerMobileButton() {
       }}
     >
       <span
-        className={`block relative bg-red-600 w-8 h-1 transition-all delay-150
+        className={`block relative bg-[#1BC6B4] w-8 h-1 transition-all delay-150
       ${activeMobileMenu ? 'rotate-45 top-[10px]' : null}`}
       ></span>
       <span
         className={`
-      block relative bg-red-600 w-8 h-1 transition-all delay-150
+      block relative bg-[#1BC6B4] w-8 h-1 transition-all delay-150
     ${activeMobileMenu ? 'opacity-0' : null}
     `}
       ></span>
       <span
-        className={`block relative bg-red-600 w-8 h-1 transition-all delay-150
+        className={`block relative bg-[#1BC6B4] w-8 h-1 transition-all delay-150
       ${activeMobileMenu ? '-rotate-45 top-[-13.3px]' : null}`}
       ></span>
     </button>

@@ -4,17 +4,17 @@ import React from 'react'
 export default function ServicesSection() {
   return (
     <section
-      className='container py-8 px-8 flex flex-col
-    lg:px-48'
+      id='services'
+      className='section flex flex-col bg-services bg-fixed bg-center bg-cover'
     >
-      <h2 className='section-title text-center mb-12'>nossos serviços</h2>
+      <h2 className='section-title text-center mb-12'>Nossos serviços</h2>
 
       <div className='lg:grid lg:grid-cols-3 lg:gap-8'>
-        <div className=' self-center border-l pl-2'>
-          <h3 className='title-base'>tatuagem</h3>
+        <div className=' self-center border-l pl-2 min-h-[150px]'>
+          <h3 className='title-base mb-4'>Tatuagem</h3>
           <p className='paragraph text-left'>
-            &perp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            dolorum nihil neque.&perp;
+            Com todo o cuidado que sua pele merece, fazemos diferentes estilos
+            de arte de maneira a marcar sua personalidade em seu corpo
           </p>
         </div>
 
@@ -25,11 +25,11 @@ export default function ServicesSection() {
           alt='image'
         />
 
-        <div className='self-center border-r pr-2'>
-          <h3 className='title-base text-right'>piercing</h3>
+        <div className='self-center border-r pr-2 min-h-[150px]'>
+          <h3 className='title-base text-right mb-4'>Body piercing</h3>
           <p className='paragraph text-right'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet,
-            veniam.
+            Realizamos a aplicação de body piercing através de um serviço feito
+            por um profissional experiente e qualificado
           </p>
         </div>
       </div>
