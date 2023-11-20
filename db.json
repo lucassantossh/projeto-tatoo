@@ -1,0 +1,32 @@
+{
+  "portfolio": [
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-1-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-2-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-3-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-4-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-5-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-1-instagram.jpg"
+    },
+    {
+      "link": "http://localhost:3000",
+      "image": "/portfolio/tattoo-1-instagram.jpg"
+    }
+  ]
+}

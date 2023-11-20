@@ -1,8 +1,8 @@
-import HeroSection from './ui/HeroSection'
-import ServicesSection from './ui/ServicesSection'
-import AboutSection from './ui/AboutSection'
-import AddressSection from './ui/AddressSection'
-import Portfolio from './ui/Portfolio'
+import HeroSection from './ui/HeroSection/HeroSection'
+import ServicesSection from './ui/ServicesSection/ServicesSection'
+import AboutSection from './ui/AboutSection/AboutSection'
+import AddressSection from './ui/AddressSection/AddressSection'
+import PortfolioSection from './ui/PortfolioSection/PortfolioSection'
 
 export default function Home() {
   return (
@@ -10,8 +10,10 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <Portfolio />
+      <PortfolioSection />
+      {/* <Portfolio /> */}
       <AddressSection />
+      {/* <ContactSection /> */}
     </>
   )
 }

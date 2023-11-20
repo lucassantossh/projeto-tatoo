@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: 'linear-gradient(rgba(32,37,41,0.3), rgba(32,37,41,1)), url("/hero-bg.jpg")',
+        hero: 'radial-gradient(circle, rgba(0,0,0,0.9),rgba(32,37,42,0.8) , rgba(0,0,0,0.6)), url("/hero-background.jpg")',
         contact:
-          'linear-gradient(rgba(32,37,41,0.1), rgba(32,37,41,0.3)), url("/bg-3.jpg")',
+          'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url("/bg-3.jpg")',
         services:
-          'linear-gradient(rgba(32,37,41,0.8), rgba(32,37,41,0.4)), url("/bg-2.jpg")',
+          'linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), url("/bg-services.jpg")',
       },
       fontFamily: {
         grenze: 'var(--font-grenze)',
