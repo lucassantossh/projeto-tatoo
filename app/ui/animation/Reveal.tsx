@@ -11,7 +11,7 @@ export default function Reveal({ children }: { children: React.ReactNode }) {
     if (isInview) {
       controls.start('visible')
     }
-  }, [isInview])
+  }, [isInview, controls])
   return (
     <motion.section
       ref={ref}

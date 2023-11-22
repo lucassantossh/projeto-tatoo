@@ -10,30 +10,28 @@ export default function Header() {
   const { activeMobileMenu, colorHeader, setColorHeader } =
     useContext(GlobalContext)
 
-  const ChangeBackground = () => {
-    if (window.scrollY > 0) {
-      setColorHeader(true)
-    } else {
-      setColorHeader(false)
+  useEffect(() => {
+    const fixedScroll = () => {
+      const body = document.querySelector('body')
+      if (activeMobileMenu === true) {
+        body?.classList.add('fixed-scroll')
+      } else {
+        body?.classList.remove('fixed-scroll')
+      }
     }
-  }
+    fixedScroll
+  })
 
   useEffect(() => {
-    fixedScroll()
-  }, [activeMobileMenu])
-
-  const fixedScroll = () => {
-    const body = document.querySelector('body')
-    if (activeMobileMenu === true) {
-      body?.classList.add('fixed-scroll')
-    } else {
-      body?.classList.remove('fixed-scroll')
+    const ChangeBackground = () => {
+      if (window.scrollY > 0) {
+        setColorHeader(true)
+      } else {
+        setColorHeader(false)
+      }
     }
-  }
-
-  useEffect(() => {
     window.addEventListener('scroll', ChangeBackground)
-  }, [colorHeader, setColorHeader])
+  })
 
   return (
     <header
