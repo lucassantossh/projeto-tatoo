@@ -1,23 +1,18 @@
 'use client'
 import React from 'react'
-import { motion } from 'framer-motion'
 
 import { IoLogoWhatsapp } from 'react-icons/io'
+import Reveal from '../animation/Reveal'
 export default function HeroSection() {
   return (
     <section
       className='section bg-hero bg-cover bg-center min-h-screen flex justify-center items-center
     '
     >
-      <motion.div
-        initial={{ opacity: 0.8 }}
-        whileInView={{ opacity: 1 }}
-        exit={{ opacity: 1 }}
-        transition={{ duration: 0.1 }}
-      >
+      <Reveal>
         <h1
           className='text-5xl text-yellow-500
-        md:text-center capitalize font-grenze font-black md:text-6xl mb-4'
+          md:text-center capitalize font-grenze font-black md:text-6xl mb-4'
         >
           A sua personalidade <br />
           eternizada em seu corpo
@@ -32,14 +27,14 @@ export default function HeroSection() {
         </p>
         <a
           href='https://wa.me/5591998165368'
-          className='whatsapp-button mx-auto flex items-center gap-2 w-fit'
+          className='whatsapp-button font-semibold mx-auto flex items-center gap-2 w-fit'
         >
-          <span className='text-lg'>
+          <span className='text-2xl font-base text-green-600'>
             <IoLogoWhatsapp />
           </span>
           contato
         </a>
-      </motion.div>
+      </Reveal>
     </section>
   )
 }

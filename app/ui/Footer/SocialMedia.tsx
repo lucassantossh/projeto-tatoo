@@ -51,7 +51,7 @@ export default function SocialMedia() {
         </li>
         <li className='text-2xl'>
           <a
-            href='http://'
+            href='https://pin.it/2lgsELz'
             target='_blank'
             rel='noopener noreferrer'
           >

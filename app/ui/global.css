@@ -3,21 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-zinc-900;
+  }
   h2,
   h3,
   p {
     @apply text-slate-100;
   }
 }
-body {
-  background-color: black;
-}
+
 @layer components {
   .section {
-    @apply pt-24 pb-8 mx-auto container px-4 sm:px-8 lg:px-48;
+    @apply pt-24 pb-8 mx-auto container px-4 sm:px-8 lg:px-48 relative;
   }
   .whatsapp-button {
-    @apply bg-green-600 text-white border-none rounded-sm px-4 py-2 mt-8;
+    @apply bg-yellow-400 text-zinc-950 border-none rounded-sm px-4 py-2 mt-8;
   }
   .section-title {
     @apply text-3xl font-medium text-[#ffffff] mb-8 capitalize tracking-wide;

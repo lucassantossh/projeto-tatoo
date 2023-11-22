@@ -4,6 +4,7 @@ import { GlobalContext } from '@/app/providers/GlobalContext'
 import HeaderNavList from './HeaderNavList'
 import HeaderHamburguerMobileButton from './HeaderHamburguerMobileButton'
 import Link from 'next/link'
+import Image from 'next/image'
 // import ThemeSwitcher from './ThemeSwitcher'
 export default function Header() {
   const { activeMobileMenu, colorHeader, setColorHeader } =
@@ -41,16 +42,23 @@ export default function Header() {
       sm:px-8
       lg:px-32
       xl:px-48
-      ${colorHeader ? 'bg-[#202529]' : 'bg-transparent'}
+      ${colorHeader ? 'bg-zinc-950' : 'bg-transparent'}
     `}
     >
       <Link
         href={'/'}
-        className={`z-10 uppercase ${
-          colorHeader ? 'text-white' : 'text-gray-50'
-        }`}
+        className={`z-10 uppercase flex items-center
+        ${colorHeader ? 'text-white' : 'text-gray-50'}`}
       >
-        killer tatoo
+        <Image
+          src={'/logo-killer-tattoo.svg'}
+          width={52}
+          height={52}
+          alt='logo do estúdio de tatuagem killer tattoo'
+        />{' '}
+        <span className='text-yellow-500 font-grenze tracking-widest'>
+          killer tattoo
+        </span>
       </Link>
       <HeaderNavList />
       <HeaderHamburguerMobileButton />

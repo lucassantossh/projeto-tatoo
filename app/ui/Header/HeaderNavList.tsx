@@ -14,7 +14,8 @@ export default function HeaderNavList() {
     { id: 1, path: '/', label: 'início' },
     { id: 2, path: '#about', label: 'sobre' },
     { id: 3, path: '#services', label: 'serviços' },
-    { id: 4, path: '#contact', label: 'contato' },
+    { id: 4, path: '#portfolio', label: 'portfólio' },
+    { id: 5, path: '#address', label: 'localização' },
   ]
   return (
     <nav
@@ -31,7 +32,7 @@ export default function HeaderNavList() {
             ${colorHeader ? 'text-white' : 'bg-transparent'}`}
           >
             <Link
-              className='capitalize font-bold text-4xl text-[#A1B4C4]
+              className='capitalize font-bold text-4xl text-yellow-400
               lg:font-normal lg:text-base
             '
               onClick={() => setActiveMobileMenu(false)}
