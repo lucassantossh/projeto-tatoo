@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className='section pt-8 pb-1 text-center bg-black'>
       <div className='rounded-xl w-fit mx-auto p-1'>
         <Image
-          src={'/logo-killer-tattoo.svg'}
+          src={'/images-outils/logo-killer-tattoo.svg'}
           height={90}
           width={90}
           alt='logo do estúdio de tatuagem killer tattoo'

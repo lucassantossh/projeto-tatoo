@@ -31,7 +31,7 @@ export default function SocialMedia() {
   return (
     <nav className='mt-4 py-4'>
       <ul className='text-white flex items-center justify-center gap-4'>
-        <li className='text-2xl'>
+        <li className='text-2xl text-yellow-400'>
           <a
             href='https://www.instagram.com/_killertattoo/'
             target='_blank'
@@ -40,7 +40,7 @@ export default function SocialMedia() {
             <FaInstagram />
           </a>
         </li>
-        <li className='text-2xl'>
+        <li className='text-2xl text-yellow-400'>
           <a
             href='https://wa.me/5591998165368'
             target='_blank'
@@ -49,7 +49,7 @@ export default function SocialMedia() {
             <IoLogoWhatsapp />
           </a>
         </li>
-        <li className='text-2xl'>
+        <li className='text-2xl text-yellow-400'>
           <a
             href='https://pin.it/2lgsELz'
             target='_blank'

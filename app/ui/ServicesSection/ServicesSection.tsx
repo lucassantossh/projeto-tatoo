@@ -5,6 +5,7 @@ import Reveal from '../animation/Reveal'
 
 export default function ServicesSection() {
   return (
+    //
     <section
       id='services'
       className='section flex flex-col bg-services bg-center bg-cover bg-fixed'

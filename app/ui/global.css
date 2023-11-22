@@ -15,13 +15,13 @@
 
 @layer components {
   .section {
-    @apply pt-24 pb-8 mx-auto container px-4 sm:px-8 lg:px-48 relative;
+    @apply pt-28 pb-8 mx-auto container px-4 sm:px-8 lg:px-48 relative;
   }
   .whatsapp-button {
     @apply bg-yellow-400 text-zinc-950 border-none rounded-sm px-4 py-2 mt-8;
   }
   .section-title {
-    @apply text-3xl font-medium text-[#ffffff] mb-8 capitalize tracking-wide;
+    @apply text-3xl font-medium text-yellow-400 mb-8 capitalize tracking-wide;
   }
   .heading-two {
     @apply tracking-wide font-medium uppercase text-2xl mb-4;

@@ -13,7 +13,7 @@ export default function Reveal({ children }: { children: React.ReactNode }) {
     }
   }, [isInview])
   return (
-    <motion.div
+    <motion.section
       ref={ref}
       variants={{
         hidden: { opacity: 0, y: 100 },
@@ -21,9 +21,9 @@ export default function Reveal({ children }: { children: React.ReactNode }) {
       }}
       initial={'hidden'}
       animate={controls}
-      transition={{ duration: 0.3, delay: 0.01 }}
+      transition={{ duration: 0.11, delay: 0.01 }}
     >
       {children}
-    </motion.div>
+    </motion.section>
   )
 }

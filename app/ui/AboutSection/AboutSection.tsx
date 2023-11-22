@@ -9,13 +9,16 @@ export default function AboutSection() {
         id='about'
         className='section flex pb-24 flex-col lg:flex-row justify-between items-center'
       >
-        <div className='pr-4 shadow-md shadow-yellow-400/10 mb-8 sm:mb-0'>
-          <Image
-            src={'/lucas-santos-perfil.png'}
-            height={320}
-            width={320}
-            alt='bruxo'
-          />
+        <div className='relative mb-8 sm:mb-0'>
+          <div className='w-full absolute -inset-0 blur-md bg-gradient-to-t from-yellow-200 via-yellow-400 to-yellow-600'></div>
+          <div className='relative pr-4 bg-zinc-900 rounded-md'>
+            <Image
+              src={'/images-outils/lucas-santos-perfil.png'}
+              height={481}
+              width={320}
+              alt='bruxo'
+            />
+          </div>
         </div>
 
         <div className='max-w-2xl'>

@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <GLOBALCONTEXTPROVIDER>
       <html lang='pt-br'>
-        <body className={`${inter.className} ${grenze.variable}`}>
+        <body className={`${inter.className} ${grenze.variable} scroll-smooth`}>
           <Header />
           <main>{children}</main>
           <Footer />

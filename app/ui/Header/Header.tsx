@@ -51,7 +51,7 @@ export default function Header() {
         ${colorHeader ? 'text-white' : 'text-gray-50'}`}
       >
         <Image
-          src={'/logo-killer-tattoo.svg'}
+          src={'/images-outils/logo-killer-tattoo.svg'}
           width={52}
           height={52}
           alt='logo do estúdio de tatuagem killer tattoo'

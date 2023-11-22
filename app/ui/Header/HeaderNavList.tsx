@@ -33,7 +33,7 @@ export default function HeaderNavList() {
           >
             <Link
               className='capitalize font-bold text-4xl text-yellow-400
-              lg:font-normal lg:text-base
+              lg:font-normal lg:text-base lg:hover:text-yellow-500
             '
               onClick={() => setActiveMobileMenu(false)}
               href={link.path}
